@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #fff;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: radial-gradient(pink,aqua);
+    background: url('back2.jpg')center/cover;
+   
+    &-weather{
+        height: 85%;
+        width: 85%;
+        // background-color: green;
+        // border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+        // background: url('spring.jpg')center/cover;
+        background-color: rgba(0,0,0,0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        &-right{
+            color: #fff;
+            height: 100%;
+            width: 70%;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-direction: column;
+            &-head{
+                padding: 30px;
+            }
+            &-content{
+                // background-color: red;
+            color: #fff;
+            margin: 50px;
+            // :first-child{
+            //     font-size: 120px;
+            // }
+            &-detail{
+                :first-child{
+                    font-size: 100px;
+                }
+                span{
+                    margin: 5px;
+                    font-size: 30px;
+                }
+                img{
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            &-time{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                font-size: 50px;
+                background-color: red;
+                span{
+                    margin: 5px;
+                }
+            }
+            
+            }
+        }
+        &-left{
+            height: 90%;
+            width: 30%;
+            background-color:rgba(0,0,0,0.8);
+
+            padding: 30px;
+            &-search{
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // background-color: red;
+            input{
+                border: none;
+                outline: none;
+                padding: 10px 0px;
+                background-color: transparent;
+                border-bottom: 2px solid #00ffff66;
+                caret-color: rgba(0, 255, 255,0.4);
+                width: 300px;
+                
+            }
+            button{
+                border: none;
+                outline: none;
+                padding: 10px;
+                background-color: #00ffff66;
+                color: #fff;
+                // margin: 0px 5px;
+            }
+        }
+        &-details{
+            color: #fff;
+            // background-color: red;
+            div{
+                padding: 20px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        }
+    }
+}
+// #hour #min{
+//     font-size: 30px;
+// }
+// #time{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+@media screen and (max-width:425px){
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-weather{
+        margin-top: 50px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column-reverse;
+        height: 80%;
+        width: 80%;
+        overflow: hidden;
+        &-right{
+            width: 100%;
+            // background-color: red;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            &-head{
+                  display: none;
+                  background-color: red;
+            }
+            &-content{
+                display: flex;
+                align-items:start;
+                justify-content: start;
+                
+                // background-color: red;
+                &-detail{
+                    display: flex;
+                    flex-wrap: wrap;
+                    :first-child{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+        &-left{
+            height: 100%;
+            width: 80%;
+           padding: 30px;
+           background-color: transparent;
+
+        }
+    }
+}
+}
+.rain{
+    background: url('rain1.jpg')center/cover;
+}
+.winter{
+    background: url('winter-back.jpg')center/cover;
+}
+.haze{
+    background: url('haze1.jpg')center/cover;
+}
+.sunny{
+    background: url("summer.jpg")center/cover;
+}
+.cloud{
+    background: url("black-cloud.jpg")center/cover;
+}

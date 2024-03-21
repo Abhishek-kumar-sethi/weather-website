@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container" id="back">
+    <div class="container-weather">
+        <div class="container-weather-right">
+            <div class="container-weather-right-head">
+                <h1>Weather Website</h1>
+            </div>
+            <div class="container-weather-right-content">
+                <div class="container-weather-right-content-detail">
+                    <span id="temp">Temperature</span>
+                    <span id="name">location</span>
+                    <span id="season">season</span>
+                <img src="cloud-emo.png" alt="" id="emo">
+                </div>
+               
+                <!-- <div class="container-weather-right-content-time">
+                    <span id="hour"></span>:
+                    <span id="min"></span>
+                    <span id="day"></span>
+                    <span id="date"></span>
+                </div> -->
+                
+               
+            </div>
+        </div>
+        <div class="container-weather-left">
+            <h2>Search Weather</h2>
+            <div class="container-weather-left-search">
+                <input type="text" placeholder="Enter Location" id="int">
+                <button id="btn">Search</button>
+            </div>
+            <div class="container-weather-left-details">
+                <div style="border-bottom: 2px solid #00ffff66;">Weather Details</div>
+                <div>
+                    <span>Cloud</span><span id="cloud">0%</span>
+                </div>
+                <div>
+                    <span>Humidity</span><span id="humi">0%</span>
+                </div>
+                <div>
+                    <span>Pressure</span><span id="press">0%</span>
+                </div>
+                <div>
+                    <span>Wind Speed</span><span id="wind">06%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="api.js">
+        
+    </script>
+</body> 
+</html>
